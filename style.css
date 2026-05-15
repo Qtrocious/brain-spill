@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Courier+Prime&display=swap');
+
+body {
+    /* COOOL LIFE IS STRANGE CURSOR*/
+    cursor:url("data:application/octet-stream;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA3UlEQVRYhe2VPQ7DIAyFTdUj9RbeOGg2bpE70QnJsox/MFE78CZisN8XiAnA0dHRkUM3QJfGP4GYAVTEXhGfhdPMh6IQL22SFrsB+gegcAjJcMtucHNrjWSaArESI4WXILSklYKhnBXzsd1bwDUTTzwNEQGIwvI5tQ0tVcR+tVbo8yh+tVZSreh5W96G1liKpXbAAtxebDUW+UhDhWh8zHlyUneC1u8RYDeAVSh7Z7xDJEyjBSUz2p7UXIq7lP3Ct3RI5ve6vUUjMNq6tfOYFOfnS6/lxwBmMJbx3+gL8cPM20PWu14AAAAASUVORK5CYII="), auto;
+    background-color: #f4ece6; /* Warm, aged paper color */
+    color: #333;
+}
+
+.main-title {
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
+    color: #2c2826; /* Faded black, like a worn out pen */
+}
+
+p {
+    font-family: 'Courier Prime', monospace; /* Typewriter text for the descriptions */
+    color: #4a4543;
+}
+.idea-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.idea-card {
+    background-color: #fcf1b6; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.idea-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} 
+
+.card-text {
+    text-align: left;
+}
+
+.card-image {
+    max-width: 120px;
+    border: 8px solid #f9f9f9;
+    border-bottom: 20px solid #f9f9f9;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.2);
+    transform: rotate(-3deg);
+    transition: transform 0.3s ease;
+}
+
+.card-image:hover {
+    transform: scale(1.5) rotate(2deg);
+    z-index: 2;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-self: center;
+
+}
